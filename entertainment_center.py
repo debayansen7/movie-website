@@ -1,13 +1,40 @@
 import fresh_tomatoes
 import media
+# importing fresh_tomatoes module and media module
 
-three_idiots = media.Movie("3 Idiots", "In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.", "http://www.gstatic.com/tv/thumb/movieposters/7951929/p7951929_p_v8_aa.jpg", "https://www.youtube.com/watch?v=xvszmNXdM4w")
-finding_nemo = media.Movie("Finding Nemo", "After his son gets abducted in the Great Barrier Reef and is despatched to Sydney, a meek clownfish embarks on a journey to bring him home.", "https://d35fkdjhhgt99.cloudfront.net/static/use-media-items/17/16315/full-1028x1500/56702cc2/Finding%20Nemo%20%282003%29%202.jpeg?resolution=0", "https://www.youtube.com/watch?v=2zLkasScy7A")
-baahubali = media.Movie("Baahubali", "In the kingdom of Mahishmati, while pursuing his love, Shivudu learns about the conflict-ridden past of his family and his legacy. He must now prepare himself to face his new-found archenemy.", "http://4.bp.blogspot.com/-ESdMlxdjmfs/VZ3xhEtQUSI/AAAAAAAAjUs/w4EybAdIIoc/s1600/Bahubali%2BHD%2BWallpaperes%2B7.jpg", "https://www.youtube.com/watch?v=VdafjyFK3ko")
+"""This is Deb's favourite movie trailer website"""
 
-toy_story = media.Movie("Toy Story", "Andy's favourite toy, Woody, is worried that after Andy receives his birthday gift, a new toy called Buzz Lightyear, his importance may get reduced. He thus hatches a plan to eliminate Buzz.", "http://www.impawards.com/1995/posters/toy_story_ver1.jpg", "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-avatar = media.Movie("Avatar", "Jake, a paraplegic marine, replaces his brother on the Na'vi inhabited Pandora for a corporate mission. He is accepted by the natives as one of their own but he must decide where his loyalties lie.", "http://s3.foxmovies.com/foxmovies/production/films/18/images/posters/251-asset-page.jpg", "https://www.youtube.com/watch?v=5PSNL1qE6VY")
-school_of_rock = media.Movie("School Of Rock", "Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's substitute teacher's job. Bearing no qualifications for it, he instead starts training the students to be a bandself.", "https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg", "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
+# Created multiple variable indexs for the movies list array
+movie1 = media.Movie("3 Idiots",
+ "2 friends form a great bond with Rancho due to his refreshing outlook.......",
+ "images/three_idiots.jpg",
+ "https://www.youtube.com/watch?v=xvszmNXdM4w")
+movie2 = media.Movie("Finding Nemo",
+ "After his son gets abducted in the Great Barrier Reef........",
+ "images/Finding Nemo.jpeg",
+ "https://www.youtube.com/watch?v=2zLkasScy7A")
+movie3 = media.Movie("Baahubali",
+ "In the kingdom of Mahishmati, while pursuing his love, Shivudu.........",
+ "images/Bahubali.jpg",
+ "https://www.youtube.com/watch?v=VdafjyFK3ko")
+movie4 = media.Movie("Toy Story",
+ """Andy's favourite toy, Woody, is worried as Andy receives his gift,
+ a new toy called............""",
+ "images/toy_story.jpg",
+ "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+movie5 = media.Movie("Avatar",
+ """Jake, a paraplegic marine, replaces his brother on the Na'vi inhabited
+ Pandora for a corporate mission...........""",
+ "images/avatar.jpg",
+ "https://www.youtube.com/watch?v=5PSNL1qE6VY")
+movie6 = media.Movie("School Of Rock",
+ """Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's
+ substitute teacher's job..........""",
+ "images/School_of_Rock.jpg",
+ "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
 
-movies = [three_idiots, finding_nemo, baahubali, toy_story, avatar, school_of_rock]
+# The movie list array
+movies = [movie1, movie2, movie3, movie4, movie5, movie6]
+
+# function trigger to open_movies_page function with movie array
 fresh_tomatoes.open_movies_page(movies)
