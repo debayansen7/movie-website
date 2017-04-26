@@ -2,11 +2,11 @@ import fresh_tomatoes
 import media
 # importing fresh_tomatoes module and media module
 
-"""This is Deb's favourite movie trailer website"""
+""" This is Deb's favourite movie trailer website """
 
 # Created multiple variable indexs for the movies list array
 movie1 = media.Movie("3 Idiots",
- "2 friends form a great bond with Rancho due to his refreshing outlook.......",
+ "2 friends form a great bond with Rancho due to his refreshing outlook.....",
  "images/three_idiots.jpg",
  "https://www.youtube.com/watch?v=xvszmNXdM4w")
 movie2 = media.Movie("Finding Nemo",
